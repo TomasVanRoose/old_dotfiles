@@ -1,0 +1,5 @@
+[user]
+	name = Tomas Van Roose
+	email = tomas.vanroose@ugent.be
+[core]
+	editor = nvim
