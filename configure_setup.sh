@@ -9,3 +9,10 @@ brew install coreutils
 
 # Tree
 brew install tree
+
+# Python
+brew install python
+brew install python3
+sudo pip install virtualenv
+pip install virtualenvwrapper
+
