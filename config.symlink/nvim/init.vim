@@ -3,6 +3,8 @@ call plug#begin("$HOME/.config/nvim/plugged")
 
 Plug 'altercation/vim-colors-solarized'
 
+Plug 'elixir-lang/vim-elixir'
+
 call plug#end()
 
 " ========== General Config ==========

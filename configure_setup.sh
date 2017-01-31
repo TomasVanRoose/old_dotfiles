@@ -19,7 +19,7 @@ brew install fortune
 # Python
 brew install python
 brew install python3
-sudo pip install virtualenv
+pip install virtualenv
 pip install virtualenvwrapper
 
 # Oh my zsh
@@ -32,3 +32,6 @@ echo ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=\'fg=10\' >> $ZSH_CUSTOM/zsh-autosuggestion
 
 # TMUX
 brew install tmux
+
+# Node
+brew install nodejs
