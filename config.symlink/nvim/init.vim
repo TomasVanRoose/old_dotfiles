@@ -19,6 +19,11 @@ inoremap jk <Esc>
 inoremap jj j
 let mapleader = "\<Space>"
 
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+
 " ========== Appearance ==========
 syntax enable
 set background=dark
