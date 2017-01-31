@@ -1,0 +1,19 @@
+export PATH=/usr/local/bin:/usr/bin/:$PATH
+
+# User config
+
+# Language
+export LANG=en_US.UTF-8
+export LC_ALL=C
+
+# Dotfiles
+export DOTFILES=$HOME/.dotfiles
+
+# Editor
+export EDITOR=nvim
+
+# ssh
+export SSH_KEY_PATH=$HOME/.ssh/rsa_id
+
+# Aliases
+source $HOME/.aliases.sh

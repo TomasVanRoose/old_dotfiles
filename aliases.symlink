@@ -1,0 +1,15 @@
+if command -v gls &>/dev/null; then # Mac with GNU ls
+	LS="gls"
+	eval `gdircolors $HOME/.dir_colors`
+else # non-Mac with GNU ls
+	LS="ls"
+	eval `dircolors $HOME/.dir_colors`
+fi
+alias ls="$LS -l --color"
+
+
+alias config="$EDITOR $HOME/.zshrc"
+alias reload="source $HOME/.zshrc"
+
+alias vim=nvim
+alias vimrc="$EDITOR $HOME/.config/nvim/init.vim"
