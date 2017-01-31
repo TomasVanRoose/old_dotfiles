@@ -13,6 +13,7 @@ set relativenumber
 set showcmd
 set showmode
 set autoread
+set visualbell
 
 set clipboard+=unnamedplus
 
