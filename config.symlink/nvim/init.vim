@@ -12,6 +12,8 @@ set showcmd
 set showmode
 set autoread
 
+set clipboard+=unnamedplus
+
 " ========== Remaps ==========
 inoremap jk <Esc>
 inoremap jj j
