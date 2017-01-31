@@ -9,6 +9,8 @@ brew install coreutils
 
 # Tree
 brew install tree
+# Quote engine
+brew install fortune
 
 # Python
 brew install python

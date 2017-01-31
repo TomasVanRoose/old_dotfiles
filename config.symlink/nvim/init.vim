@@ -24,4 +24,14 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" ========== Indentation ==========
+set autoindent
+set smartindent
+set smarttab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+set shiftround
+set expandtab
+
 " ========== Plugin config ==========

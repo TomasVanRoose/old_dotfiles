@@ -8,6 +8,10 @@ export LC_ALL=C
 
 # Dotfiles
 export DOTFILES=$HOME/.dotfiles
+export PATH=$DOTFILES/bin:$PATH
+
+# Splashscreen
+greeter.py $(tput cols)
 
 # Editor
 export EDITOR=nvim
