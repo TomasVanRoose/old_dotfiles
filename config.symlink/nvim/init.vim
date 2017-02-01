@@ -5,6 +5,9 @@ Plug 'altercation/vim-colors-solarized'
 
 Plug 'elixir-lang/vim-elixir'
 
+" Tmux
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
 
 " ========== General Config ==========
@@ -22,10 +25,6 @@ inoremap jk <Esc>
 inoremap jj j
 let mapleader = "\<Space>"
 
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
 
 " ========== Appearance ==========
 syntax enable
