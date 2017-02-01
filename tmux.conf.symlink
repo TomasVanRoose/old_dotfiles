@@ -27,6 +27,7 @@ set -g default-command "reattach-to-user-namespace -l ${SHELL}" # Clipboard
 set -g default-terminal "screen-256color"
 
 # Status bar
+set-option -g status-position bottom
 setw -g status-bg colour0
 setw -g status-fg colour14
 
@@ -40,7 +41,7 @@ setw -g window-status-format '#I:#W'
 setw -g window-status-current-format '#[fg=colour3][#I:#W] '
 
 # Music and datetime
-set -g status-right "#($DOTFILES/tmux/now_playing.sh) #[bg=colour0, fg=colour4]#[bg=colour4, fg=colour0]#(date +'%a')  #(date +'%d/%m')  #(date +'%H:%M') "
+set -g status-right "#($DOTFILES/tmux/now_playing.sh) #[bg=colour0, fg=colour4]#[bg=colour4, fg=colour0]#(date +'%a')  #(date +'%d/%m')  #(date +'%H:%M') #[fg=colour3]#[bg=colour3, fg=colour0] #($DOTFILES/tmux/battery.sh) "
 set -g status-right-length 120
 
 # Messages
