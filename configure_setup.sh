@@ -30,8 +30,10 @@ mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 echo ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=\'fg=10\' >> $ZSH_CUSTOM/zsh-autosuggestions_custom.zsh # iTerm + solarized dark fix
 
-# TMUX
-brew install tmux
-
 # Node
 brew install nodejs
+
+# TMUX
+brew install tmux
+brew install reattach-to-user-namespace # Fix clipboard
+

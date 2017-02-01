@@ -20,6 +20,7 @@ export DOTFILES=$HOME/.dotfiles
 export PATH=$DOTFILES/bin:$PATH
 
 # Splashscreen
+clear
 greeter.py $(tput cols)
 
 # Editor
