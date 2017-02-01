@@ -6,6 +6,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install git
+brew install bash
 brew install neovim
 
 # Install GNU coreutils -> gls for colored ls

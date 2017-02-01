@@ -1,5 +1,15 @@
-# 256 colors for vim
-set -g default-terminal "screen-256color"
+set-option -g status-utf8 on
+
+# Change prefix
+set-option -g prefix C-q
+bind C-q send-prefix
+unbind C-b
+
+# Reload 
+bind-key r source-file ~/.tmux.conf \; display-message "tmux config reloaded!"
+
+# don't rename windows automatically
+set-option -g allow-rename off
 
 # Start window numbering at 1
 set-option -g base-index 1
@@ -9,5 +19,29 @@ set-window-option -g pane-base-index 1
 set -g mouse on
 
 set -g default-shell $SHELL
-
 set -g default-command "reattach-to-user-namespace -l ${SHELL}" # Clipboard
+
+##### Design #####
+
+# 256 colors for vim
+set -g default-terminal "screen-256color"
+
+# Status bar
+setw -g status-bg colour0
+setw -g status-fg colour14
+
+# Session name
+set -g status-left-length 20
+set -g status-left "#[bg=colour4, fg=colour0]#S#[bg=colour0, fg=colour4]"
+
+# Session windows
+set-option -g status-justify "centre"
+setw -g window-status-format '#I:#W'
+setw -g window-status-current-format '#[fg=colour3][#I:#W] '
+
+# Music and datetime
+set -g status-right "#($DOTFILES/tmux/now_playing.sh) #[bg=colour0, fg=colour4]#[bg=colour4, fg=colour0]#(date +'%a')  #(date +'%d/%m')  #(date +'%H:%M') "
+set -g status-right-length 120
+
+# Messages
+set -g message-bg colour4
