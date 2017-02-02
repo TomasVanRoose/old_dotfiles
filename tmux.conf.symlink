@@ -41,6 +41,9 @@ bind-key x kill-pane # no need to confirm when closing pane
 # 256 colors for vim
 set -g default-terminal "screen-256color"
 
+set -g pane-border-style fg=colour6
+set -g pane-active-border-style fg=colour6
+
 # Status bar
 set-option -g status-position bottom
 setw -g status-bg colour0
@@ -56,7 +59,7 @@ setw -g window-status-format '#I:#W'
 setw -g window-status-current-format '#[fg=colour3][#I:#W] '
 
 # Music and datetime
-set -g status-right "#($DOTFILES/tmux/now_playing.sh) #[bg=colour0, fg=colour4]#[bg=colour4, fg=colour0]#(date +'%a')  #(date +'%d/%m')  #(date +'%H:%M') #[fg=colour3]#[bg=colour3, fg=colour0] #($DOTFILES/tmux/battery.sh) "
+set -g status-right "#($HOME/.tmux/now_playing.sh) #[bg=colour0, fg=colour4]#[bg=colour4, fg=colour0]#(date +'%a')  #(date +'%d/%m')  #(date +'%H:%M') #[fg=colour3]#[bg=colour3, fg=colour0] #($HOME/.tmux/battery.sh) "
 set -g status-right-length 120
 
 # Messages
