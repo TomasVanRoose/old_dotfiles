@@ -3,10 +3,11 @@ call plug#begin("$HOME/.config/nvim/plugged")
 
 Plug 'altercation/vim-colors-solarized'
 
-Plug 'elixir-lang/vim-elixir'
-
 " Tmux
 Plug 'christoomey/vim-tmux-navigator'
+
+Plug 'elixir-lang/vim-elixir'
+Plug 'vim-latex/vim-latex'
 
 call plug#end()
 
@@ -23,8 +24,7 @@ set clipboard+=unnamedplus
 " ========== Remaps ==========
 inoremap jk <Esc>
 inoremap jj j
-"let mapleader = "\<Space>"
-map <SPACE> <leader>
+let mapleader = "\<Space>"
 
 
 " ========== Appearance ==========
