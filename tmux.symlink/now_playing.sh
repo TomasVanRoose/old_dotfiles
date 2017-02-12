@@ -11,6 +11,6 @@ esac
 shell_is_osx()   { [[ $SHELL_PLATFORM == 'osx' ]]; }
 
 [ ! shell_is_osx ] && return 1
-np=$(~/.dotfiles/tmux/now_playing.script)
+np=$($HOME/.tmux/now_playing.script)
 echo "♫ $np"
 

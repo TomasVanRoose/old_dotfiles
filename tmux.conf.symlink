@@ -51,12 +51,12 @@ setw -g status-fg colour14
 
 # Session name
 set -g status-left-length 20
-set -g status-left "#[bg=colour4, fg=colour0]#S#[bg=colour0, fg=colour4]"
+set -g status-left "#[bg=colour3, fg=colour0]#S#[bg=colour0, fg=colour3]"
 
 # Session windows
 set-option -g status-justify "centre"
 setw -g window-status-format '#I:#W'
-setw -g window-status-current-format '#[fg=colour3][#I:#W] '
+setw -g window-status-current-format '#[fg=colour3][#I:#W]'
 
 # Music and datetime
 set -g status-right "#($HOME/.tmux/now_playing.sh) #[bg=colour0, fg=colour4]#[bg=colour4, fg=colour0]#(date +'%a')  #(date +'%d/%m')  #(date +'%H:%M') #[fg=colour3]#[bg=colour3, fg=colour0] #($HOME/.tmux/battery.sh) "

@@ -23,7 +23,8 @@ set clipboard+=unnamedplus
 " ========== Remaps ==========
 inoremap jk <Esc>
 inoremap jj j
-let mapleader = "\<Space>"
+"let mapleader = "\<Space>"
+map <SPACE> <leader>
 
 
 " ========== Appearance ==========
