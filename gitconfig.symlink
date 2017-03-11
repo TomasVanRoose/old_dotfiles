@@ -3,3 +3,4 @@
 	email = tomas.vanroose@ugent.be
 [core]
 	editor = nvim
+	excludesfile = ~/.gitignore

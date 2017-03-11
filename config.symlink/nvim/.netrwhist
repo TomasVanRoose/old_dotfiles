@@ -1,3 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/Tomas/.dotfiles/tmux'
+let g:netrw_dirhist_2='/Volumes/MacintoshHD/Tomas/Documents/UGent/MasterBach/Semester2/Vakoverschrijdend Project/data/documentation/milestone1/domeinmodel_src'
+let g:netrw_dirhist_3='/Volumes/MacintoshHD/Tomas/Documents/UGent/MasterBach/Semester2/Vakoverschrijdend Project/app/frontend/mockups/fleet'
+let g:netrw_dirhist_4='/Volumes/MacintoshHD/Tomas/Documents/UGent/MasterBach/Semester2/Vakoverschrijdend Project/app/frontend/website/src/config'
