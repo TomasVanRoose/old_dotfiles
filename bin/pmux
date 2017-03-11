@@ -7,4 +7,3 @@ cd ~/Documents/Programming
 tmux new-window -n Programming
 tmux split-window -h -p 40
 tmux attach-session -d -t Programming
-
