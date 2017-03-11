@@ -9,6 +9,10 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'elixir-lang/vim-elixir'
 Plug 'vim-latex/vim-latex'
 
+" Vuejs
+Plug 'posva/vim-vue'
+
+
 call plug#end()
 
 " ========== General Config ==========
