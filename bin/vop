@@ -4,5 +4,4 @@ cd ~/Vopro
 tmux new-session -d -s "Vopro5"
 tmux rename-window "Project"
 tmux new-window -n Server
-ssh vop
 tmux attach-session -d -t "Vopro5"
