@@ -1,7 +1,7 @@
 " ========== Plugins ==========
 call plug#begin("$HOME/.config/nvim/plugged")
 
-Plug 'altercation/vim-colors-solarized'
+Plug 'morhetz/gruvbox'
 
 " Tmux
 Plug 'christoomey/vim-tmux-navigator'
@@ -11,6 +11,9 @@ Plug 'vim-latex/vim-latex'
 
 " Vuejs
 Plug 'posva/vim-vue'
+
+" RDF
+Plug 'niklasl/vim-rdf'
 
 
 call plug#end()
@@ -34,7 +37,7 @@ let mapleader = "\<Space>"
 " ========== Appearance ==========
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
 
 " ========== Indentation ==========
 set autoindent
