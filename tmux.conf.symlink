@@ -13,6 +13,9 @@ set-option -g allow-rename off
 set-option -g base-index 1
 set-window-option -g pane-base-index 1
 
+# No delay for escape key press
+set -sg escape-time 0
+
 # Mouse support for scrolling and resizing panes
 set -g mouse on
 
@@ -52,12 +55,12 @@ setw -g status-fg colour14
 # Session name
 #set -g status-left-length 20
 #set -g status-left "#[bg=colour3, fg=colour0]#S#[bg=colour0, fg=colour3]"
-set -g status-left ""
+set -g status-left "#S           "
 
 # Session windows
 set-option -g status-justify "left"
-setw -g window-status-format '#[fg=colour7]#W   '
-setw -g window-status-current-format '#[fg=colour1]#W   '
+setw -g window-status-format '#[fg=colour7][#I] #W '
+setw -g window-status-current-format '#[fg=colour1]#W '
 
 # Music and datetime
 set -g status-right "#[fg=colour7]#($HOME/.tmux/now_playing.sh)   #[fg=colour3] #($HOME/.tmux/battery.sh) "
