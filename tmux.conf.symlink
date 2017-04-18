@@ -59,7 +59,7 @@ set -g status-left "#S           "
 
 # Session windows
 set-option -g status-justify "left"
-setw -g window-status-format '#[fg=colour7][#I] #W '
+setw -g window-status-format '#[fg=colour7][#I]#W '
 setw -g window-status-current-format '#[fg=colour1]#W '
 
 # Music and datetime
