@@ -63,7 +63,7 @@ setw -g window-status-format '#[fg=colour7][#I]#W '
 setw -g window-status-current-format '#[fg=colour1]#W '
 
 # Music and datetime
-set -g status-right "#[fg=colour7]#($HOME/.tmux/now_playing.sh)   #[fg=colour3] #($HOME/.tmux/battery.sh) "
+set -g status-right "#[fg=colour7]#(mpc current)   #[fg=colour3] #($HOME/.tmux/battery.sh) "
 #set -g status-right "#($HOME/.tmux/now_playing.sh)  #(date +'%H:%M') #[fg=colour3] #($HOME/.tmux/battery.sh) "
 set -g status-right-length 120
 
